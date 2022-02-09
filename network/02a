@@ -1,0 +1,18 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    02a                                                :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
+#    Updated: 2022/02/09 12:57:09 by briffard         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+#!bin/bash
+#
+#Identify and display the ethernet interface characteristics
+#a-> Identify broadcast address
+
+
