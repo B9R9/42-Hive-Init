@@ -1,18 +1,24 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    07                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 11:07:55 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 11:37:27 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Figure out the PID of the SSHD service
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#Process Identifier = value attribute by exploitation system for every process
+#load in the RAM. Yopu can check PID in the gestionnaire des task
+
+#ps allow you to see all process running
+
+ps aux | grep "usr/sbin/sshd" | awk '{print $2}'
+OR
+systemctl status ssh | awk '/PID/{print$3}'
+OR
+ps ax | grep sshd | awk '{print $1}'

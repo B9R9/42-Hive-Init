@@ -1,18 +1,18 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    11                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 11:53:56 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 11:59:40 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Name the command that display the available space left and used on the system
+#in an humanly understandable way
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#df - report file system disk space usage
+
+df -h

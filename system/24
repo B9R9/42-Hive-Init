@@ -1,18 +1,15 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    24                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 14:49:56 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 14:55:05 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Find the command that lsit all packages
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+apt list | cut -d/ -f1

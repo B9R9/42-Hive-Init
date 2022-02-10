@@ -1,18 +1,16 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    18                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 13:44:37 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 13:50:24 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Find the command that lills ssh service
+i#systemctl - Control tge systemd system and service manager
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+systemctl stop ssh

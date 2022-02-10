@@ -1,18 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    14                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 12:13:23 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 12:18:01 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+# Run the tail -f /var/log/sysl9og command in backgtound
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#tail - output the last part of files
+#-f output appended data as the file grows
+# & allow to run in background
+
+sudo tail -f /var/log/syslog &

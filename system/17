@@ -1,18 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    17                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 13:38:32 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 13:44:23 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Find the command that allows you to connect via ssh on the VM(in parallel with
+graphic seesion)
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#need more info
+
+ssh user@IP_adress
+or
+ssh user@IP_Adress -p <port>

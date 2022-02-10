@@ -1,18 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    21                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 14:27:24 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 14:43:59 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#list all real users on the VM
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+awk -F: '$3 >= 1000 && $1 != nobody {print $1}' /etc/passwd
+
+Or
+
+grep -E '^UID_MIN|UID_MAX' /etc/login.defs
+getent passwd {1000..6000}

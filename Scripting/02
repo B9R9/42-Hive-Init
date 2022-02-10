@@ -1,18 +1,27 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    02                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 15:28:16 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 15:45:13 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Write a script which delete an ACTIVE user on the VM
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#!/bin/bash
+
+echo "Which user do you want to delete? "
+read username
+echo "Are you sure [Y/n]?"
+read answer
+if [ $answer = 'Y' ]; then
+s	udo killall -u $username
+	userdel -f $username
+	printf "User: ${username} has been deleted!"
+else
+	printf "User: ${username} still active"
+fi

@@ -1,18 +1,22 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    04                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 10:04:30 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 10:22:03 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#What command gives you the sime since your system was last boot?
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+#!/bin/bash
+
+#In /proc/uptime:
+# fisrt number:		time since the last boot in second
+# second number:	How much time of that time the machine has spent idle in
+# seconds
+ 
+awk '{print int($1/3600)":"int(($1%3600)/60)":"int($1%60)}' /proc/uptime

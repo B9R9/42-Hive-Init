@@ -1,18 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    23                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Created: 2022/02/10 14:45:46 by briffard          #+#    #+#              #
+#    Updated: 2022/02/10 14:49:51 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#!bin/bash
-#
-#Identify and display the ethernet interface characteristics
-#a-> Identify broadcast address
+#Explain how connect yourself as new user.(With graphic sessionand ssh session)
+#need more info
 
-ifconfig en0 | sed -n 's/.*broadcast //p'
+
+Start the session in Virtual box, enter username and password
+via ssh-> in terminal:
+ssh user@vm_ip, then password
