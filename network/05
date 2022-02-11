@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#Identify the ip address of the DNS that responds to the following url: who.int
+
+#nslookup - query Internet name srvers interactively
+
+nslookup who.int

@@ -1,0 +1,7 @@
+#!bin/bash
+
+#Find the external Ip of 42.fr
+
+#nslookup 42.fr | and use cut or awk
+
+163.172.250.16
