@@ -1,3 +1,11 @@
 #!/bin/bash
 
 #find the IP that was assigned to you by dhcp sever
+#DHCP - Dynamic Host Configuration Protocol
+#	Automatic configuration IP address on TCP/IP network (Transmission Control
+#		Protocol): Rules that make computer understand each other whatever the
+#		brand(MAC or Windows)TCP in charge of delivery of the DATA and IP give
+#		the addressi
+#ipconfig -- view and control Ip configuration state
+
+ipconfig getpacket en0 | grep "server_identifier"

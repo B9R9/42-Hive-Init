@@ -1,6 +1,6 @@
 #!/bin/bash
 
 #Find the provider of the who.int
-#need more info
-Cloudlfare
+#With the Ip adress and web site like whois.domaintools.com
+Cloudlfare.com
 

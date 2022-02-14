@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #Query an external DNS server on the who.int domain name (ie.: google 8.8.8.8)
-
-#need more info
+#Google Public DNS 
+#	Looking for check DNS registration
+#	Use a different DNS public instead of FAI(Fournisseur Acces Internet)
 nslookup who.int 8.8.8.8

@@ -2,7 +2,10 @@
 
 #Identify the default gateway in the routing table
 
-#Need more info
 #netstat -rn show Kernel IP routing table
+#route - Manually manipulate the routing tables
+#	get: Lookup and display the route for a destination
+#	- n: Print host and network names
 
-netstat -rn | awk '/defaut/{print}' | awk 'NR == 1 {print}'
+route -n get default | grep gateway
+

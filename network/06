@@ -2,7 +2,6 @@
 
 #Get the complete path of the file that contain the IP address of the DNS server
 #you're using
-#need more info thios file
 
 /etc/resolv.conf
 

@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    02a                                                :+:      :+:    :+:    #
+#    02                                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/09 10:37:34 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:47:44 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 11:57:42 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,5 +14,8 @@
 #
 #Identify and display the ethernet interface characteristics
 #a-> Identify broadcast address
-
+#B-> List all subnet
+#command arp - Address resolution display and control
+#- a Display or deletes all of the current ARP entries
 ifconfig en0 | sed -n 's/.*broadcast //p'
+arp -a

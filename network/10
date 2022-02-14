@@ -3,4 +3,6 @@
 #Identify the network devices (and listing out)
 #between user computer and domain
 
-#need more info
+#traceroute - print the route ppackets take to network host
+
+traceroute 42.fr

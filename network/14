@@ -1,6 +1,6 @@
 #!/bin/bash
 
 #What file contains the local DNS entries ?
-
-more info about the file
+# His role is yo assciate hostname to Ip adress. Conssulted before acees to DNS
+# server
 /etc/hosts

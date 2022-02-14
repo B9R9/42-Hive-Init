@@ -3,7 +3,8 @@
 #Use the output of the previous command to find the name and IP address of the
 #device that make the link between you (local network) and the outside world
 
+#NAT - Stateless native address translation action
+# Translate private address in public address
+nat(10.60.1.1)
 
-#need more info
-# nat - Stateless native address translation action
 
