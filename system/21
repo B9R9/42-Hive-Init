@@ -6,15 +6,10 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 14:27:24 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 14:43:59 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 15:58:17 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #list all real users on the VM
 
-awk -F: '$3 >= 1000 && $1 != nobody {print $1}' /etc/passwd
-
-Or
-
-grep -E '^UID_MIN|UID_MAX' /etc/login.defs
-getent passwd {1000..6000}
+ls /home

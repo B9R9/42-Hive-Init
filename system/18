@@ -6,11 +6,11 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 13:44:37 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 13:50:24 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 15:46:28 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #Find the command that lills ssh service
-i#systemctl - Control tge systemd system and service manager
+#systemctl - Control tge systemd system and service manager
 
-systemctl stop ssh
+sudo service ssh stop

@@ -6,7 +6,7 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 15:46:06 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 18:10:18 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 16:22:18 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,38 +14,6 @@
 
 #!/bin/bash
 
-printf "Hello!\nWhat your name ?"
-
-read username
-
-printf "Hi ${username}!\n"
-printf "I am a little script that Baptiste have to create for the init project\n"
-printf "Do you like music ? [yes/no]"
-read music
-
-if [ $music = 'yes' ]
-then
-	printf "What kind of music?\n"
-	printf "rock, reggae or maybe hiphop?\n"
-	read musicselection
-	if [ $musicselection = reggae ] 
-	then
-		printf "let me play some musics for you"
-		sensible-browser www.youtube.com/watch?v=C4YpaqJT0wQ
-	elif [ $musicselection = rock ]
-	then
-		printf "let me play some musics for you"
-		sensible-browser www.youtube.com/watch\?v=26nsBfLXwSQ
-	elif [ $musicselection = hiphop ] 
-	then
-		printf "let me play some musics for you"
-		sensible-browser www.youtube.com/watch?v=BJzmJxLncO4
-	fi
-	else 
-		printf "Instead you can watch this video\n"
-#		sensible-browser www.youtube.com/watch?v=2rt7fMY-Uyc
-fi
-printf "Of course we can do so many things with bash that can help you in your everyday life\n"
 printf "We can upload or upgrade Moulinette\n"
 path="$(find /home -type d -name norminette)"
 if [ -d $path ]

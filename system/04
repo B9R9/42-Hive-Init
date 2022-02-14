@@ -6,11 +6,11 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 10:04:30 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:22:03 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 14:45:20 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-#What command gives you the sime since your system was last boot?
+#What command gives you the time since your system was last boot?
 
 #!/bin/bash
 
@@ -19,4 +19,4 @@
 # second number:	How much time of that time the machine has spent idle in
 # seconds
  
-awk '{print int($1/3600)":"int(($1%3600)/60)":"int($1%60)}' /proc/uptime
+uptime -p

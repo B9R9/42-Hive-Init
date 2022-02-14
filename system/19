@@ -6,12 +6,10 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 13:50:28 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 13:55:45 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 15:52:52 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #List all services wich are started at boot time and this kind of services
-
-systemctl list-unit-files --type=service --state=enabled --all
-OR
-systemctl list-unit-files --type=service is-enabled --all
+#systemctl list-unit-files --type=service is-enabled --all
+systemctl -at service

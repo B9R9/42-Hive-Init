@@ -6,10 +6,10 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 14:49:56 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 14:55:05 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 16:05:11 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #Find the command that lsit all packages
 
-apt list | cut -d/ -f1
+sudo apt list --installed | less

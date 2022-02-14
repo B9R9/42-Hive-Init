@@ -6,10 +6,11 @@
 #    By: briffard <briffard@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/02/10 09:41:36 by briffard          #+#    #+#              #
-#    Updated: 2022/02/10 10:04:20 by briffard         ###   ########.fr        #
+#    Updated: 2022/02/14 14:43:21 by briffard         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 #What file has to be modified to made it permanent?
 
+/etc/hostname 
 /etc/hosts
